@@ -1,13 +1,109 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  transition: 0.7s ease;
+}
+
+.bg-light {
+  background: #fafafa;
+  color: black;
+}
+
+.bg-dark {
+  background: black;
+  color: rgb(161, 231, 56);
+}
+
+.Header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.btn {
+  background: none;
+  height: 30px;
+  width: 130px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.7s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-dark {
+  border: 2px solid rgb(158, 158, 158);
+}
+
+.btn-light {
+  border: 2px solid rgb(161, 231, 56);
+  color: rgb(161, 231, 56);
+}
+
+.container-search {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  height: 35px;
+  width: 300px;
+  padding-left: 10px;
+  font-size: 16px;
+  background: #fafafa;
+  border: 1px solid rgb(158, 158, 158);
+  border-radius: 5px;
+}
+
+.Characters {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.card-container {
+  width: 250px;
+  height: 380px;
+  margin: 0 0 50px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.shadow-light {
+  box-shadow: 0px 1px 15px 0px #000000;
+}
+
+.shadow-dark {
+  box-shadow: 0px 1px 15px 0px rgb(161, 231, 56);
+}
+
+.card-info {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+  position: relative;
+}
+
+.favorite {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  bottom: -5px;
+  right: 10px;
 }
